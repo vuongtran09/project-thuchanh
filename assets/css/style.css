@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 24px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    min-width: 186px;
+    padding: 12px 24px;
+    color: #1EBFC1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    /* line-height: 1.5; */
+    border-radius: 6px;
+    border: 1px solid #1EBFC1;
+}
+
+/* Header */
+
+.header.fixed {
+    position: sticky;
+    top: -38px;
+}
+
+.header .body {
+    display: flex;
+    padding: 70px 0 8px;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header li a {
+    padding: 8px 19.5px;
+    color: #2F3A3B;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.header li.active a {
+    color: #2F3A3B;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.header .action .sign-in-btn {
+    color: #494949;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: none;
+    margin-left: 133.5px;
+}
+
+/*  Main */
