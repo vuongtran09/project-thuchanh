@@ -705,6 +705,11 @@ a {
     font-weight: 600;
     border-radius: 14px;
     background: var(--primary-color);
+    cursor: pointer;
+}
+
+.content-cta-group .content-cta-btn:hover {
+    opacity: 0.6;
 }
 
 /* Footer */
@@ -726,8 +731,10 @@ a {
 }
 
 .footer .column .list {
+    position: relative;
     margin-top: 17px;
 }
+
 
 .footer .column .list a {
     display: inline-block;
@@ -735,6 +742,14 @@ a {
     color: #535353;
     font-size: 1.6rem;
     font-weight: 400;
+}
+
+.footer .column a:hover::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #535353;
 }
 
 .column .socials {
@@ -761,7 +776,6 @@ a {
     font-weight: 400;
 }
 
-.column .desc.active::after,
 .column .desc:hover::after {
     position: absolute;
     left: -20px;
